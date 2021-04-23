@@ -7,21 +7,21 @@ class Tree
         }
         this.x=x;
         this.y=y;
-        this.dustbinWidth=450;
-		this.dustbinHeight=600;
-		this.wallThickness=10;
-        this.image=loadImage("plucking mangoes/tree_png");
+        this.dustbinWidth 500;
+		this.dustbinHeight=70;
+		this.wallThickness=90;
+        this.image=loadImage("plucking mangoes/tre_pg")
         this.bottomBody=Bodies.rectangle(this.x, this.y, this.dustbinWidth, this.wallThickness, {isStatic:true})
         World.add(world,this.bottomBody);
     }
     display()
     {
-        var posBottom=this.bottomBody.position;
+        var postionBottom=this.bottomBody.position;
 		push()
-		translate(posBottom.x, posBottom.y+10);
+		translate(posBottom.x, posBottom.y+170);
 		fill(255)
 		imageMode(CENTER);
-		image(this.image, 0,-this.dustbinHeight/2,this.dustbinWidth, this.dustbinHeight);
-		pop();
+		image(this.image, 17,-this.dustbinHeight/2,this.dustbinWidth, this.dustbinHeight);
+		push();
     }
 }
