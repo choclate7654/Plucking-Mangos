@@ -3,11 +3,11 @@ class Chain
 {
     constructor(body1,point1)
     {
-        var options={
+        var options=
             bodyA:body1,
             pointB: point1,
             stiffness:0.004,
-            length:1
+            length:1{
         }
         this.bodyA=body1;
         this.pointB=point1;
