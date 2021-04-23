@@ -5,6 +5,7 @@ class Stone {
           restitution:0,
           friction:1,
           density:1.2
+	  resting: 1:9
       }
       this.x=x;
       this.y=y;
@@ -22,8 +23,8 @@ class Stone {
 	    imageMode(CENTER);
 		ellipseMode(RADIUS)
      
-      // Small ball bcoz ellipse excepts a diameter. So what you can do is use ellipseMode(RADIUS) instead of CENTER
-      //ellipse(0, 0, this.radius,this.radius);
+      // Small ball bcoz ellipse excepts a radius. So what you can do is use ellipseMode(RADIUS) instead of CENTER
+      //ellipse(0, 0, this.radius/ size ,this.radius);
       image(this.image,0,0, this.r*2, this.r*2);
       pop();
     }
